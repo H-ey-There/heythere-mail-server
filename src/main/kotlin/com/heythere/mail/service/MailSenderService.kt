@@ -18,7 +18,6 @@ class MailSenderService(private val sender: JavaMailSender,
             helper.setSubject("한승민님이 방송을 시작하였습니다");
             helper.setText(contextBuilder(), true);
         }
-
         sender.send(message)
     }
 
